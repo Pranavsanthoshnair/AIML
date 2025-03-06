@@ -8,7 +8,7 @@ face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + "haarcascade_fronta
 image = cv2.imread("demo4.jpeg")                          # name of the source file in ()
 
 # Detect faces
-faces = face_cascade.detectMultiScale(image, scaleFactor=1.1, minNeighbours=7)
+faces = face_cascade.detectMultiScale(image, scaleFactor=1.1, minNeighbors=7)
 
 # Blur each face
 for (x, y, w, h) in faces:
